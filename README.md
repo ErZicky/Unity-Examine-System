@@ -1,5 +1,5 @@
 # Unity-Examine-System
-A simple First Person Examine system for unity
+A simple First Person Item Examine system for unity 
 
 here's how it looks (it's more smooth than it looks):
 
