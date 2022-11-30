@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class InspectScript : MonoBehaviour
 {
-    [SerializeField] private float distance;
-    [SerializeField] private Transform InspectArea;
+    [SerializeField] private float distance; //Raycast max distance
+    [SerializeField] private Transform InspectArea; //A gameobject child of the camera where the object will be moved and rotated
     [SerializeField] private float rotationSpeed = 125f;
     [SerializeField] private float dropSpeed = 0.2f;
     [SerializeField] private float pickupSpeed = 0.2f;
@@ -14,7 +14,7 @@ public class InspectScript : MonoBehaviour
     [Header("Using the FPS camera is suggested")]
     [SerializeField] private Transform RayOrigin;
     [Header("Change 'PlayerController' in the code with your own FPS controller script")]
-    [SerializeField] private PlayerController PlayerControllerScript;
+    [SerializeField] private PlayerController PlayerControllerScript; //my fps controller change it with yours
 
 
 
@@ -78,6 +78,8 @@ public class InspectScript : MonoBehaviour
 
     IEnumerator pickupItem()
     {
+        
+      //collider and rigidbodies cause problem during the inspection so we disable them during it  
       if(InspectedObj.GetComponent<Collider>())
       {
         InspectedObj.GetComponent<Collider>().enabled = false;
