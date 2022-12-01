@@ -1,7 +1,7 @@
 # Unity-Examine-System
 A simple First Person Item Examine system for unity 
 
-here's how it looks (it's more smooth than it looks):
+here's how it looks (it's more smooth than the GIF make it looks):
 
 ![](https://github.com/ErZicky/Unity-Examine-System/blob/main/images./GIF.png)
 
