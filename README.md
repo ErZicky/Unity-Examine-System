@@ -1,3 +1,5 @@
+## The software is given “as is”, with no warranty of its 100% stability on latest unity version I won't provide support of any kind.
+
 # Unity-Examine-System
 A simple First Person Item Examine system for unity 
 
